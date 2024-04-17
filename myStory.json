@@ -1,0 +1,153 @@
+{
+    "Title": "Egyptian Pyramid",
+    "Credits": "Created by Scott Miller (scsmille@ucsc.edu).",
+    "InitialLocation": "Temple Entrance",
+    "Chamber": "Chamber of Hieroglyphics",
+    
+    "Locations": {
+        "Temple Entrance": {
+            "Body": "<br><br>As you step forward, the massive doors groan under their own weight, slowly parting as if welcoming you into the heart of the ancient structure.<br> The air inside is cool and still, a stark contrast to the sunbaked exterior. <br>Your footsteps echo on the stone flooring, each sound amplified by the silent, expansive halls that stretch before you.<br> Dimly lit torches cast flickering shadows, illuminating scenes of epic battles and divine rituals painted on the walls. <br>Ahead, the corridor forks, leading deeper into the enigmatic depths of the pyramid, each path promising its own secrets and dangers.",
+            "Body2": "You return to the entrance.",
+            "isBodyShown": false,
+            "Choices": [
+                {
+                    "Text": "Proceed Left",
+                    "Target": "Grand Hallway"
+                },
+                {
+                    "Text": "Proceed Right",
+                    "Target": "Reflection Pool"
+                }
+            ]
+        },
+
+        
+        "Grand Hallway": {
+            "Body": "The Grand Hallway stretches long and wide, flanked by towering columns that disappear into the shadows overhead.<br>The floor is a mosaic of colorful tiles, each depicting scenes of daily life in ancient times.",
+            "Body2": "You return to the Grand Hallway",
+            "isBodyShown": false,
+            "Choices": [
+                {
+                    "Text": "Continue Further",
+                    "Target": "Chamber of Hieroglyphics"
+                },
+
+                {
+                    "Text": "Go Back",
+                    "Target": "Temple Entrance"
+                }
+            ]
+        },
+        "Chamber of Hieroglyphics": {
+            "Body": "Walls covered in vibrant hieroglyphics surround you in this chamber.<br>The detailed carvings glow subtly under the flicker of torchlight, revealing stories of creation, celestial journeys, and divine judgments.<br><br>In front of you stands a massive door, with a small key-hole.",
+            "Body2": "You return to the Chamber of Hieroglyphics",
+            "isBodyShown": false,
+            "Choices": [
+                {
+                    "Text": "Proceed Through the Door",
+                    "Target": "High Priest's Chamber"
+                },
+
+                {
+                    "Text": "Go Back",
+                    "Target": "Grand Hallway"
+                }
+            ]
+        },
+
+        "High Priest's Chamber": { 
+            "RequiresKey": true,
+            "Body": "This sacred chamber, sealed for centuries, is adorned with golden icons and religious relics.<br>The air inside is thick with incense, preserving the sanctity of a place once reserved for high rituals and offerings to the gods. ",
+            "Body2": "You return to the High Priest's Chamber",
+            "isBodyShown": false,
+            "Choices": [
+                {
+                    "Text": "Continue Further",
+                    "Target": "Sacred Altar"
+                },
+                {
+                    "Text": "Go Back",
+                    "Target": "Chamber of Hieroglyphics"
+                }
+            ]
+        },
+        "Sacred Altar": {
+            "Body": "In the center of this solemn room stands a stone altar, its surface worn smooth by countless ancient offerings.<br>Statues of Horus and Thoth stand sentinel on either side, their eyes set on the central piece — a pedestal waiting for the sacred amulet that will unlock the powers held dormant for millennia.",
+            "Body2": "You return to the Sacred Altar",
+            "isBodyShown": false,
+            "Choices": [
+                {
+                    "Text": "Proceed...",
+                    "Target": "Monster's Lair"
+                },
+                {
+                    "Text": "Interact with Altar",
+                    "Target": "Sacred Altar",
+                    "Action": "Place Amulet"
+                },
+                {
+                    "Text": "Go Back",
+                    "Target": "High Priest's Chamber"
+                }
+            ]
+        },
+        "Monster's Lair": {
+            "Body": "You walk into the next room, noticing fresh, clearly skinned bones on both sides.<br><br>A quiet whistling noise is heard, no, not whistling... Breathing?<br><br>Alas! Looking to your left, you see an enormous beast staring you down.<br>The guardian beast roars, with the gem of Osiris hanging by its neck.<br><br>You need to run!",
+            "Body2": "You return to the Monster's Lair",
+            "isBodyShown": false,
+            "Choices": [
+                {
+                    "Text": "Run!",
+                    "Target": "Final"
+                }
+            ]  
+        },
+        "Final": {
+            "Body": "",
+            "Choices": [
+                {
+                    "Text": "Show Credits",
+                    "Target": "NULL"
+                }
+            ]  
+        },
+
+        
+        "Reflection Pool": {
+            "Body": "The serene waters of the Reflection Pool mirror the clear blue sky above, disturbed only by the occasional drop falling from the ornate fountain at its center.<br>Beneath the surface, the glint of something metallic catches your eye — a key, perhaps the one to unlock the secrets of the pyramid.",
+            "Body2": "You return to the Reflection Pool",
+            "Body3": "",
+            "isBodyShown": false,
+            "Choices": [
+                {
+                    "Text": "Pick up the shimmering object",
+                    "Target": "Reflection Pool",
+                    "Action": "Obtain the key"
+                },
+                {
+                    "Text": "Continue Further",
+                    "Target": "Temple Gardens"
+                },
+                {
+                    "Text": "Go Back",
+                    "Target": "Temple Entrance"
+                }
+            ]  
+        },
+        "Temple Gardens": {
+            "Body": "",
+            "Body2": "You return to the Temple Gardens",
+            "isBodyShown": false,
+            "Choices": [
+                {
+                    "Text": "Go Back",
+                    "Target": "Reflection Pool"
+                }
+            ]  
+        },
+        "Hidden Niche": {
+            "Body": "<br><br>Tucked away behind an unassuming wall of exotic plants lies the Hidden Niche, a small space overflowing with ancient scrolls and artifacts.<br>Among these treasures sits an amulet, aglow with an ethereal light.<br>It's said to restrain the guardian beast if placed atop the Altar's Pedastal."
+        }
+
+    }
+}
